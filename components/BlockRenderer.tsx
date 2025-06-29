@@ -1,5 +1,4 @@
-'use client';
-
+import Image from 'next/image';
 import { MOCK_PRODUCTS } from "../data/products";
 
 export function BlockRenderer({ name, image, products }: { name: string; image: string; products: string }) {
@@ -11,11 +10,11 @@ export function BlockRenderer({ name, image, products }: { name: string; image: 
     return (
         <div className="border p-4 rounded mb-4">
             <h3 className="text-lg font-bold mb-2">{name}</h3>
-            <img src={image} alt={name} className="w-full h-48 object-cover mb-2" />
+            <Image src={image} alt={name} className="w-full h-48 object-cover mb-2" />
             <div className="grid grid-cols-2 gap-4">
                 {productList.map((prod) => (
                     <div key={prod?.sku} className="border p-2">
-                        <img src={prod?.image} className="h-24 mx-auto" alt={prod?.name} />
+                        <Image src={prod?.image || ''} className="h-24 mx-auto" alt={prod?.name || 'Product'} />
                         <p>{prod?.name}</p>
                         <p className="text-sm text-gray-500">{prod?.price}</p>
                     </div>

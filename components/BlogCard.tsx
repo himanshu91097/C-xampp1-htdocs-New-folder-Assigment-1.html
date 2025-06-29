@@ -1,7 +1,8 @@
-'use client';
 import Link from 'next/link';
+import Image from 'next/image';
+import { BlogPost } from '../lib/types';
 
-export default function BlogCard({ post }: { post: any }) {
+export default function BlogCard({ post }: { post: BlogPost }) {
     const date = new Date(post.date);
     const formattedDate = new Intl.DateTimeFormat('en-GB', {
         year: 'numeric',
@@ -15,7 +16,7 @@ export default function BlogCard({ post }: { post: any }) {
             className="group block overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 transition-shadow hover:shadow-xl"
         >
             {post.coverImage && (
-                <img
+                <Image
                     src={post.coverImage}
                     alt={post.title}
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
