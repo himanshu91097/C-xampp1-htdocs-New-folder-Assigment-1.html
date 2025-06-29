@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "slug": "1",
+    "title": "Getting Started with Next.js",
+    "author": "John Doe",
+    "coverImage": "https://picsum.photos/200/300",
+    "date": "2024-12-01T10:00:00Z",
+    "body": "Next.js is a powerful React framework for building web applications."
+  },
+  {
+    "id": "2",
+    "slug": "2",
+    "title": "Using TypeScript and Tailwind in Next.js",
+    "author": "Jane Smith",
+    "coverImage": "https://picsum.photos/200",
+    "date": "2025-01-15T14:30:00Z",
+    "body": "TypeScript helps catch bugs early, and Tailwind makes styling easy."
+  },
+  {
+    "id": "3",
+    "slug": "3",
+    "title": "Getting Started with Next.js",
+    "author": "John Doe",
+    "coverImage": "https://picsum.photos/200/300",
+    "date": "2024-12-01T10:00:00Z",
+    "body": "Next.js is a powerful React framework for building web applications."
+  },
+  {
+    "id": "4",
+    "slug": "4",
+    "title": "Using TypeScript and Tailwind in Next.js",
+    "author": "Jane Smith",
+    "coverImage": "https://picsum.photos/200",
+    "date": "2025-01-15T14:30:00Z",
+    "body": "TypeScript helps catch bugs early."
+  }
+]
